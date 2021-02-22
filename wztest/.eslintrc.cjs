@@ -1,16 +1,14 @@
 module.exports = {
   parser: "@babel/eslint-parser",
-  parserOptions: {
-    requireConfigFile: false,
-  },
   env: {
     "browser": true,
     "node": true,
     "es6": true
   },
   root: true,
-  extends: "eslint:recommended",
-  plugins: ["promise"],
+  extends: 
+  "eslint:recommended",
+  plugins: ["promise", "import"],
   rules: {
     "no-console": "error",
     "max-lines-per-function": [ "error", { "max": 100, "skipComments": true, "skipBlankLines": true } ],
@@ -36,6 +34,11 @@ module.exports = {
     //"promise/avoid-new": "warn",
     "promise/no-new-statics": "error",
     "promise/no-return-in-finally": "warn",
-    "promise/valid-params": "warn"
+    "promise/valid-params": "warn",
+    "import/no-unresolved": [2, { commonjs: false, amd: false }],
+    "import/named": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "import/extensions": [2, "ignorePackages"]
   }
 }
