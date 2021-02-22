@@ -4,7 +4,7 @@
   "description": "Test System",
   "type": "module",
   "scripts": {
-    "lint": "eslint /builds/wazzup/core/src"
+    "lint": "eslint --config /wztest/.eslintrc.js /builds/wazzup/core/src"
   },
   "author": "Wazzup",
   "private": true,
