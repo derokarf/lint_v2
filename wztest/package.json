@@ -1,0 +1,18 @@
+{
+  "name": "wztest",
+  "version": "1.0.0",
+  "description": "Test System",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint /build/wazzup/src",
+    "lint-fix": "eslint --fix /build/wazzup/src"
+  },
+  "author": "Wazzup",
+  "private": true,
+  "dependencies": {
+    "@babel/eslint-parser": "^7.12.16",
+    "eslint": "^7.20.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-promise": "^4.1.1"
+  }
+}
